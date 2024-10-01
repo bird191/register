@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="">
+  <link rel="stylesheet" href="">
+  <link rel="icon" href="">
+  <title>
+    Registration form
+  </title>  
+</head>
+<body>
+    <h1>
+      Registration Form
+    </h1>
+    <hr>
+    <form 
+    action="action_page.php"
+    name="Registration"
+    target="_blank"
+    method="post"
+    >
+    <label for="firstName">
+      First Name:*
+    </label><br>
+    <input id="firstName" name="firstName" type="text" placeholder="First"required><br> 
+    <label for="lastName">
+      Last Name:*
+    </label><br>
+    <input id="lastName" name="lastName" type="text"placeholder="Last"required><br><br>
+    <label for="Email">
+      Email:*
+    </label><br>
+    <input id="Email" name="Email" type="email"placeholder="email" required><br>
+    <label for="Phone">
+      Phone number:
+    </label><br>
+    <input id="Phone" name="Phone" type="tel"maxlength="3" size="3" placeholder="555">
+    -
+    <input id="Phone" name="Phone" type="tel"maxlength="3"size="3"placeholder="555">
+    -
+    <input id="Phone" name="Phone" type="tel"maxlength="3"size="3"placeholder="555"><br>
+    <label for="DOB">
+      Date of Birth
+    </label><br>
+    <input id="DOB" name="DOB" type="date" placeholder="mm/dd/yyyy"required><br>
+    <label for="Gender">
+      Gender
+    </label><br>
+    <input id="Male" name="Gender" type="radio">
+    <label for="Male">
+      Male
+    </label>
+    <input id="Female" name="Gender" type="radio">
+    <label for="Female">
+      Female
+    </label>
+    <input id="Other" name="Gender" type="radio">
+    <label for="Other">
+      Other
+    </label><br>
+    <label for="Household">
+      Household Size:
+    </label><br>
+    <input id="Household" name="Household" type="number" maxlength="2" min="1" max="10" size="2"><br>
+    <label for="Income">
+      Annual Income:
+    </label><br>
+    <select id="Income" name="Income">
+      <option>
+        Less Than 40K
+      </option>
+      <option>
+        40K
+      </option>
+      <option>
+        60K
+      </option>
+      <option>
+        80K
+      </option>
+      <option>
+        100K+
+      </option>
+    </select><br>
+    <label for="Message">
+      Message
+    </label><br>
+    <textarea rows="3" cols="20" name="Message">
+      add message here.......
+    </textarea><br>
+    <label for="Password">
+      Password*
+    </label><br>
+    <input id="Password" name="Password" type="password" placeholder="password"required><br>
+    <label for="CPassword">
+      Confirm Password*
+    </label><br>
+    <input id="CPassword" name="Password" type="password" placeholder="confirm password"required><br>
+    <input id="agree" name="agree" type="checkbox"required>
+    <p>
+      By Signing up, you agree to the
+      <a href="http://www.devslopes.com">
+        Terms of Service
+      </a>
+    </p>
+    <input type="submit">
+    </form>
+</body>
+</html>
